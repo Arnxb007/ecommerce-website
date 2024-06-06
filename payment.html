@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form h2 {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .place-order-btn {
+            width: 100%;
+            background-color: #f0c14b;
+            color: #111;
+            border: 1px solid #a88734;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .place-order-btn:hover {
+            background-color: #e2b43c;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form h2 {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .place-order-btn {
+            width: 100%;
+            background-color: #f0c14b;
+            color: #111;
+            border: 1px solid #a88734;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .place-order-btn:hover {
+            background-color: #e2b43c;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form h2 {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .place-order-btn, .back-btn {
+            width: 100%;
+            background-color: #f0c14b;
+            color: #111;
+            border: 1px solid #a88734;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .place-order-btn:hover, .back-btn:hover {
+            background-color: #e2b43c;
+        }
+
+        .back-btn {
+            background-color: #ccc;
+        }
+        .back-btn:hover {
+            background-color: #ff0000; /* Red color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Processing Order</h1>
+        </header>
+        <main>
+            <form>
+                <h2>Shipping Address</h2>
+                <label for="country">Country/Region</label>
+                <select id="country" name="country">
+                    <option value="afghanistan">Afghanistan</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="china">China</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="myanmar">Myanmar (Burma)</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="sri-lanka">Sri Lanka</option>
+                    <option value="tibet">Tibet</option>
+                    <!-- Add other countries as needed -->
+                </select>
+
+                <!-- Shipping address fields -->
+
+                <label for="name">Full name (First and Last name)</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Mobile number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="pincode">Pincode</label>
+                <input type="text" id="pincode" name="pincode" required>
+
+                <label for="address1">Flat, House no., Building, Company, Apartment</label>
+                <input type="text" id="address1" name="address1" required>
+
+                <label for="address2">Area, Street, Sector, Village</label>
+                <input type="text" id="address2" name="address2" required>
+
+                <label for="landmark">Landmark</label>
+                <input type="text" id="landmark" name="landmark">
+
+                <label for="city">Town/City</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="state">State</label>
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>Choose a state</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+
+                <label for="default">
+                    <input type="checkbox" id="default" name="default">
+                    Make this my default address
+                </label>
+
+                <h2>Payment Information</h2>
+                <label for="cardname">Name on Card</label>
+                <input type="text" id="cardname" name="cardname" required>
+
+                <label for="cardnumber">Card Number</label>
+                <input type="text" id="cardnumber" name="cardnumber" required>
+
+                <label for="expdate">Expiry Date</label>
+                <input type="date" id="expdate" name="expdate" required> <!-- Changed type to date -->
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <label for="instructions">Delivery instructions (optional)</label>
+                <textarea id="instructions" name="instructions" rows="3"></textarea>
+
+                <button type="submit" class="place-order-btn" onclick="index()">Place Order</button>
+            </form>
+            <button class="back-btn" onclick="goBack()">Back</button> <!-- Styled back button -->
+        </main>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
