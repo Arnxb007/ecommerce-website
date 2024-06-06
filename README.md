@@ -50,5 +50,5 @@ This is an e-commerce website for selling electronic components, devices, and ap
 
 1. Clone the repository:
    ```bash
-   
+   https://github.com/Arnxb007/ecommerce-website.git
    
