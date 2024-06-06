@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "HP Pavillion 15",
+    "category": "Computers",
+    "brand": "ExampleBrand",
+    "price": 60099.00,
+    "stock": 50,
+    "description": "HP Pavilion Gaming Laptop AMD Ryzen 5 5600H 15.6 inch(39.6cm) FHD Micro-edge IPS Laptop (8GB RAM /512GB SSD/NVIDIA GeForce GTX 1650 4GB Graphics.",
+    "image": "../images/lapi.png"
+  },
+  {
+    "id": 2,
+    "name": "Samsung S24",
+    "category": "Mobiles",
+    "brand": "TechGadget",
+    "price": 10099.99,
+    "stock": 100,
+    "image": "../images/iphone.png",
+    "description": "Galaxy S24 Ultra, the ultimate form of Galaxy Ultra with a new titanium exterior and a 17.25cm flat display. It's an absolute marvel of design.Most megapixels on a smartphone."
+  },
+  {
+    "id": 3,
+    "name": "Wireless Headphones",
+    "category": "Audio",
+    "brand": "SoundBeats",
+    "price": 3000.00,
+    "stock": 30,
+    "image": "../images/headphone.png",
+    "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color."
+  },
+  {
+    "id": 4,
+    "name": "Galaxy Watch4 ",
+    "category": "Wearables",
+    "brand": "FitTech",
+    "price": 4000.00,
+    "stock": 20,
+    "image": "../images/watch.png",
+    "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color."
+  },
+  {
+    "id": 5,
+    "name": "Bose SoundLink",
+    "category": "Audio",
+    "brand": "SoundBeats",
+    "price": 7000.00,
+    "stock": 30,
+    "image": "../images/speakers.png",
+    "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color."
+  },
+  {
+    "id": 6,
+    "name": "Television",
+    "category": "Video",
+    "brand": "Samsung",
+    "price": 290000.00,
+    "stock": 20,
+    "image": "../images/tv.png",
+    "description": "Samsung 163 cm (65 inches) D Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA65DUE77AKLXL (Black)."
+  },
+  {
+    "id": 7,
+    "name": "Flipper Zero",
+    "category": "Cyber Security",
+    "brand": "Samsung",
+    "price": 12000.00,
+    "stock": 16,
+    "image": "../images/flipper.png",
+    "description": "Flipper Zero loves hacking digital stuff, such as radio protocols, access control systems, hardware, and more. It's fully open-source and customizable, so you can extend it in whatever way you like."
+  },
+  {
+    "id": 8,
+    "name": "HackRF One",
+    "category": "Cyber Security",
+    "brand": "Samsung",
+    "price": 21000.00,
+    "stock": 6,
+    "image": "../images/hack-rf.png",
+    "description": "HackRF One from Great Scott Gadgets is a Software Defined Radio peripheral capable of transmission or reception of radio signals from 1 MHz to 6 GHz. Designed to enable test and development of modern and next generation radio technologies."
+  },
+  {
+    "id": 9,
+    "name": "WIFI Pineapple",
+    "category": "Cyber Security",
+    "brand": "Samsung",
+    "price": 43000.00,
+    "stock": 6,
+    "image": "../images/wifi-pineapple.png",
+    "description": "The industry standard WiFi pentest platform has evolved. Equip your red team with the WiFi Pineapple® Mark VII. Newly refined. Enterprise ready"
+  },
+  {
+    "id": 10,
+    "name": "ipod",
+    "category": "Audio",
+    "brand": "Aplle",
+    "price": 12000.00,
+    "stock": 6,
+    "image": "../images/airpod.png",
+    "description": "iPod Compatible for Mp3 Mp4 Player - Apple iPod Classic 7th Generation 120GB Black."
+  }
+]
