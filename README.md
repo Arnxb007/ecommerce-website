@@ -1,6 +1,9 @@
 # Electronics E-Commerce Website
 
 This is an e-commerce website for selling electronic components, devices, and appliances. It's built using HTML, CSS, and Vanilla JavaScript on the Vite build tool.
+![Electronics E-Commerce Website](![Screenshot 2024-06-06 133115](https://github.com/Arnxb007/ecommerce-website/assets/151598485/f013647d-5bbf-465f-9c86-1f9fb799a404)
+)
+- Attractive Home Page
 
 ## Features
 
