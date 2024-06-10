@@ -12,9 +12,10 @@
       referrerpolicy="no-referrer"
     />
     <title>Contact Page</title>
-    <script type="module" crossorigin src="/assets/showToast-BwL9ELPS.js"></script>
-    <script type="module" crossorigin src="/assets/main-DFGLErzt.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/showToast-Dcp3BFXF.css">
+    <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+    <script type="module" crossorigin src="/assets/showToast-QsyExN5H.js"></script>
+    <script type="module" crossorigin src="/assets/main-BC7nH_CP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/showToast-BS23JRUU.css">
   </head>
   <body>
     <!-- ========== Start Navbar ========== -->
@@ -26,9 +27,8 @@
             <p>Free shipping, 30-day return or refund guarantee.</p>
           </div>
           <div class="sign_in_up">
-            <a href="signin.html">SIGN IN </a>
-            &nbsp;
-            <a href="signup.html"> SIGN UP</a>
+            <a href="login.html" id="loginButton">LOG IN</a>
+            <span id="username_login" style="display:none;"></span>
           </div>
         </div>
       </section>
@@ -212,5 +212,28 @@
     <script>
       AOS.init();
     </script>
+    
+    <script>
+      window.onload = function() {
+      const loggedInUser = localStorage.getItem('loggedInUser');
+      const loginButton = document.getElementById('loginButton');
+      const usernameDisplay = document.getElementById('username_login');
+    
+      if (loggedInUser) {
+        loginButton.style.display = 'none';
+        usernameDisplay.style.display = 'inline';
+        usernameDisplay.textContent = loggedInUser;
+      } else {
+        loginButton.style.display = 'inline';
+        usernameDisplay.style.display = 'none';
+      }
+    
+      usernameDisplay.addEventListener('click', function() {
+        localStorage.removeItem('loggedInUser');
+        window.location.href = 'index.html';
+      });
+      }
+    </script>
+
   </body>
 </html>

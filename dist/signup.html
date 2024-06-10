@@ -6,22 +6,35 @@
     <title>Sign Up</title>
     <!-- Add a favicon -->
 
+  <script type="module" crossorigin src="/assets/signup-Dxlkpd7g.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
   <link rel="stylesheet" crossorigin href="/assets/style_3-D0HHwKVS.css">
 </head>
 <body style="background: linear-gradient(to top left, #FFA500, #FF6347);">
 
     <div class="signup-container">
         <h2>Sign Up</h2>
-        <form action="/signup" method="post">
-            <label for="username"><i class="fa fa-user"></i> Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="email"><i class="fa fa-envelope"></i> Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="password"><i class="fa fa-lock"></i> Password:</label>
-            <input type="password" id="password" name="password" required>
-            <!-- Change the button to act as a back button -->
-            <button onclick="history.back()"><i class="fa fa-arrow-left"></i>Sign Up</button>
-        </form>
-    </div>
+        <form id="signupForm">
+            <label for="newUsername"><i class="fa fa-user"></i> Username:</label>
+            <input type="text" id="newUsername" name="username" required>
+            
+            <label for="newEmail"><i class="fa fa-envelope"></i> Email:</label> <!-- Add email label -->
+            <input type="email" id="newEmail" name="newEmail" required> <!-- Add email input -->
+            
+            <label for="newPassword"><i class="fa fa-lock"></i> Password:</label>
+            <input type="password" id="newPassword" name="password" required>
+            
+            <button type="submit">Sign Up</button>
+            <button onclick="goToIndex()">Back</button>
+
+  <script>
+    function goToIndex() {
+      window.location.href = "index.html";
+    }
+  </script>
+          </form>
+          <p>Already have an account? <a href="login.html">Log in</a></p> 
+        
+    </div>
 </body>
 </html>
