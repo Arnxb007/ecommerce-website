@@ -1276,3 +1276,24 @@ footer {
     font-size: 16px;
   }
 }
+/* styles.css */
+
+#username_login {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+#username_login:hover {
+  background-color: #0056b3;
+}
+

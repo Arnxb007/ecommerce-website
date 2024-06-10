@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style_3.css">
+
+</head>
+<body style="background: linear-gradient(to top left, #FFA500, #FF6347);">
+    <div class="signin-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username"><i class="fa fa-user"></i> Username:</label>
+            <input type="text" id="usernameInput" name="username" required>
+             
+            <label for="password"><i class="fa fa-lock"></i> Password:</label>
+            <input type="password" id="passwordInput" name="password" required>
+            <button type="submit">Log In</button>
+            <button onclick="goToIndex()">Back</button>
+
+  <script>
+    function goToIndex() {
+      window.location.href = "index.html";
+    }
+  </script>
+        </form>
+         <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        
+    </div>
+  <script type="module" src="login.js"></script>
+</body>
+</html>

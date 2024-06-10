@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript eCommerce</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link
@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
     <!-- ========== Start Navbar ========== -->
@@ -32,9 +33,8 @@
             <p>Free shipping, 30-day return or refund guarantee.</p>
           </div>
           <div class="sign_in_up">
-            <a href="signin.html">SIGN IN </a>
-            &nbsp;
-            <a href="signup.html"> SIGN UP</a>
+            <a href="login.html" id="loginButton">LOG IN</a>
+            <span id="username_login" style="display:none;"></span>
           </div>
         </div>
       </section>
@@ -189,5 +189,28 @@
 
     <script type="module" src="showAddToCartCards.js"></script>
     <script src="buyNowRedirect.js"></script>
+    <script src="index.js"></script>
+    <script>
+      window.onload = function() {
+      const loggedInUser = localStorage.getItem('loggedInUser');
+      const loginButton = document.getElementById('loginButton');
+      const usernameDisplay = document.getElementById('username_login');
+    
+      if (loggedInUser) {
+        loginButton.style.display = 'none';
+        usernameDisplay.style.display = 'inline';
+        usernameDisplay.textContent = loggedInUser;
+      } else {
+        loginButton.style.display = 'inline';
+        usernameDisplay.style.display = 'none';
+      }
+    
+      usernameDisplay.addEventListener('click', function() {
+        localStorage.removeItem('loggedInUser');
+        window.location.href = 'index.html';
+      });
+      }
+    </script>
+
   </body>
 </html>

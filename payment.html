@@ -201,7 +201,7 @@
             <h1>Processing Order</h1>
         </header>
         <main>
-            <form>
+            <form id="orderForm">
                 <h2>Shipping Address</h2>
                 <label for="country">Country/Region</label>
                 <select id="country" name="country">
@@ -212,6 +212,8 @@
                     <option value="maldives">Maldives</option>
                     <option value="myanmar">Myanmar (Burma)</option>
                     <option value="nepal">Nepal</option>
+                    <option value="india">India</option>
+
                     <option value="pakistan">Pakistan</option>
                     <option value="sri-lanka">Sri Lanka</option>
                     <option value="tibet">Tibet</option>
@@ -295,18 +297,55 @@
                 <label for="instructions">Delivery instructions (optional)</label>
                 <textarea id="instructions" name="instructions" rows="3"></textarea>
 
-                <button type="submit" class="place-order-btn" onclick="index()">Place Order</button>
+                <button type="button" class="place-order-btn" onclick="placeOrder()">Place Order</button>
             </form>
-            <button class="back-btn" onclick="goBack()">Back</button> <!-- Styled back button -->
+            <button class="back-btn" onclick="goBack()">Back</button>
         </main>
+        <!-- Notification -->
+        <div id="notification" style="display: none;">
+            <p>Order placed successfully. Redirecting to home page in <span id="countdown">3</span> seconds.</p>
+        </div>
     </div>
 
     <script>
         function goBack() {
-            window.history.back();
+            window.location.href = "addToCart.html";
         }
-        function goBack() {
-            window.history.back();
+
+        function placeOrder() {
+            // Check if all required fields are filled
+            var form = document.getElementById("orderForm");
+            var inputs = form.querySelectorAll("input[required], select[required], textarea[required]");
+            var isValid = true;
+
+            inputs.forEach(function(input) {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    return;
+                }
+            });
+
+            if (!isValid) {
+                alert("Please fill out all required fields.");
+                return;
+            }
+
+            // Show notification
+            var notification = document.getElementById("notification");
+            notification.style.display = "block";
+
+            // Countdown
+            var seconds = 3;
+            var countdownElement = document.getElementById("countdown");
+            var countdownInterval = setInterval(function() {
+                seconds--;
+                countdownElement.textContent = seconds;
+                if (seconds === 0) {
+                    clearInterval(countdownInterval);
+                    // Redirect to home page
+                    window.location.href = "index.html";
+                }
+            }, 1000); // Update every second (1000 milliseconds)
         }
     </script>
 </body>

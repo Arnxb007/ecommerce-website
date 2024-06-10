@@ -13,8 +13,13 @@ export default defineConfig({
         addToCart: resolve(__dirname, "addToCart.html"),
         buynow: resolve(__dirname, "payment.html"),
         signup: resolve(__dirname, "signup.html"),
-        signin: resolve(__dirname, "signin.html"),
+        
         devloperContact: resolve(__dirname, "developerContact.html"),
+        login: resolve(__dirname, "login.html"),
+       
+
+        
+
         
 
         // Add more entry points for other HTML files as needed

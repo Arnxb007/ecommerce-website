@@ -13,7 +13,7 @@
 
     
     <link rel="stylesheet" href="style.css" />
-    <title>js ecom website</title>
+    <title>Products</title>
   </head>
   <body>
     <header class="section-navbar">
@@ -23,9 +23,8 @@
             <p>Free shipping, 30-day return or refund guarantee.</p>
           </div>
           <div class="sign_in_up">
-            <a href="signin.html">SIGN IN </a>
-            &nbsp;
-            <a href="signup.html"> SIGN UP</a>
+            <a href="login.html" id="loginButton">LOG IN</a>
+            <span id="username_login" style="display:none;"></span>
           </div>
         </div>
       </section>
@@ -267,5 +266,27 @@
     <!--* ========== End Footer Section ========== -->
 
     <script type="module" src="main.js"></script>
+    <script>
+      window.onload = function() {
+      const loggedInUser = localStorage.getItem('loggedInUser');
+      const loginButton = document.getElementById('loginButton');
+      const usernameDisplay = document.getElementById('username_login');
+    
+      if (loggedInUser) {
+        loginButton.style.display = 'none';
+        usernameDisplay.style.display = 'inline';
+        usernameDisplay.textContent = loggedInUser;
+      } else {
+        loginButton.style.display = 'inline';
+        usernameDisplay.style.display = 'none';
+      }
+    
+      usernameDisplay.addEventListener('click', function() {
+        localStorage.removeItem('loggedInUser');
+        window.location.href = 'index.html';
+      });
+      }
+    </script>
+
   </body>
 </html>
